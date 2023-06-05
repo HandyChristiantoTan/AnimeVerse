@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    android:orientation="vertical"
+    tools:context=".Activity.UbahActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ubah Data Anime"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Anime"
+        android:textSize="21sp"/>
+
+    <EditText
+        android:id="@+id/et_episode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Episode"
+        android:textSize="21sp"/>
+
+    <EditText
+        android:id="@+id/et_tahun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tahun Produksi"
+        android:textSize="21sp"/>
+
+    <EditText
+        android:id="@+id/et_studio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Studio Produksi"
+        android:textSize="21sp"/>
+
+    <EditText
+        android:id="@+id/et_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Genre"
+        android:textSize="21sp"/>
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Ubah"
+        android:textSize="21sp"/>
+
+</LinearLayout>

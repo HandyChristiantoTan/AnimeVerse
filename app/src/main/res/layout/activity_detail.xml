@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    tools:context=".Activity.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Nama Anime                :"
+            android:textSize="21sp"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/tv_episode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Total Episode               :"
+            android:layout_below="@+id/tv_nama"
+            android:textSize="21sp"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/tv_tahun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Tahun Produksi           :"
+            android:layout_below="@+id/tv_episode"
+            android:textSize="21sp"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/tv_studio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Studio                           :"
+            android:layout_below="@+id/tv_tahun"
+            android:textSize="21sp"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/tv_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Genre                            :"
+            android:layout_below="@+id/tv_studio"
+            android:textSize="21sp"
+            android:layout_marginTop="10px"/>
+    </RelativeLayout>
+
+</ScrollView>
