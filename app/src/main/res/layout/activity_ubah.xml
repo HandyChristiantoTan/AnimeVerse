@@ -52,12 +52,28 @@
         android:hint="Genre"
         android:textSize="21sp"/>
 
-    <Button
-        android:id="@+id/btn_simpan"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
-        android:text="Ubah"
-        android:textSize="21sp"/>
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_kembali"
+            android:layout_width="200dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:padding="6dp"
+            android:text="Kembali"
+            android:textSize="21sp"/>
+
+        <Button
+            android:id="@+id/btn_ubah"
+            android:layout_width="200dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/btn_kembali"
+            android:text="Ubah"
+            android:textSize="21sp"/>
+
+    </RelativeLayout>
 
 </LinearLayout>

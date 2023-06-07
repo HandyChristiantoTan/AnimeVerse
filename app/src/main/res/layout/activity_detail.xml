@@ -12,11 +12,11 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/tv_nama"
+            android:id="@+id/tv_nama2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="Nama Anime                :"
+            android:layout_centerHorizontal="true"
+            android:text=""
             android:textSize="21sp"
             android:layout_marginTop="10px"/>
 
@@ -26,8 +26,17 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Total Episode               :"
-            android:layout_below="@+id/tv_nama"
-            android:textSize="21sp"
+            android:layout_below="@+id/tv_nama2"
+            android:textSize="17sp"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/tv_episode2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_episode"
+            android:text=""
+            android:textSize="17sp"
             android:layout_marginTop="10px"/>
 
         <TextView
@@ -36,8 +45,17 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Tahun Produksi           :"
-            android:layout_below="@+id/tv_episode"
-            android:textSize="21sp"
+            android:layout_below="@+id/tv_episode2"
+            android:textSize="17sp"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/tv_tahun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tahun"
+            android:text=""
+            android:textSize="17sp"
             android:layout_marginTop="10px"/>
 
         <TextView
@@ -46,8 +64,17 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Studio                           :"
-            android:layout_below="@+id/tv_tahun"
-            android:textSize="21sp"
+            android:layout_below="@+id/tv_tahun2"
+            android:textSize="17sp"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/tv_studio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_studio"
+            android:text=""
+            android:textSize="17sp"
             android:layout_marginTop="10px"/>
 
         <TextView
@@ -56,9 +83,47 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Genre                            :"
-            android:layout_below="@+id/tv_studio"
-            android:textSize="21sp"
+            android:layout_below="@+id/tv_studio2"
+            android:textSize="17sp"
             android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/tv_genre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_genre"
+            android:text=""
+            android:textSize="17sp"
+            android:layout_marginTop="10px"/>
+
+        <Button
+            android:id="@+id/btn_ubah"
+            android:layout_width="200dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/tv_genre2"
+            android:text="Ubah"
+            android:textSize="21sp"/>
+
+        <Button
+            android:id="@+id/btn_hapus"
+            android:layout_width="200dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/tv_genre2"
+            android:layout_toRightOf="@id/btn_ubah"
+            android:text="Hapus"
+            android:textSize="21sp"/>
+
+        <Button
+            android:id="@+id/btn_kembali"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/btn_ubah"
+            android:text="Kembali"
+            android:textSize="21sp"/>
+
     </RelativeLayout>
 
 </ScrollView>

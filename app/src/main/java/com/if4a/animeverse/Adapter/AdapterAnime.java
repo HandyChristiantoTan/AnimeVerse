@@ -80,7 +80,7 @@ public class AdapterAnime extends RecyclerView.Adapter<AdapterAnime.VHAnime> {
     }
 
     public class VHAnime extends RecyclerView.ViewHolder{
-        TextView tvID, tvNama, tvEpisode, tvTahun, tvStudio, tvGenre;
+        TextView tvID, tvNama, tvTahun;
 
         public VHAnime(@NonNull View itemView) {
             super(itemView);

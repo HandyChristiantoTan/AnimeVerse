@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="6dp"
+    android:padding="6dp"
     tools:context=".Activity.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -13,17 +13,17 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/list_item_anime"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_tambah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:src="@drawable/ic_add_24"
+        android:text="Tambah"
         app:tint="@null" />
 
     <ProgressBar
