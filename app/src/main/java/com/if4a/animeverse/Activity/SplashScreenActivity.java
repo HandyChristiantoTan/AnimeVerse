@@ -1,4 +1,16 @@
 package com.if4a.animeverse.Activity;
 
-public class SplashScreenActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import com.if4a.animeverse.R;
+
+public class SplashScreenActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash_screen);
+    }
 }

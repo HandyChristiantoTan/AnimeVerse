@@ -1,6 +1,8 @@
 package com.if4a.animeverse.Adapter;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +17,7 @@ import com.if4a.animeverse.API.APIRequestData;
 import com.if4a.animeverse.API.RetroServer;
 import com.if4a.animeverse.Activity.DetailActivity;
 import com.if4a.animeverse.Activity.MainActivity;
+import com.if4a.animeverse.Activity.UbahActivity;
 import com.if4a.animeverse.Model.ModelAnime;
 import com.if4a.animeverse.Model.ModelResponse;
 import com.if4a.animeverse.R;
@@ -79,7 +82,7 @@ public class AdapterAnime extends RecyclerView.Adapter<AdapterAnime.VHAnime> {
         return listAnime.size();
     }
 
-    public class VHAnime extends RecyclerView.ViewHolder{
+    public class VHAnime extends RecyclerView.ViewHolder {
         TextView tvID, tvNama, tvTahun;
 
         public VHAnime(@NonNull View itemView) {
@@ -103,7 +106,7 @@ public class AdapterAnime extends RecyclerView.Adapter<AdapterAnime.VHAnime> {
 //                    pesan.setNegativeButton("Hapus", new DialogInterface.OnClickListener() {
 //                        @Override
 //                        public void onClick(DialogInterface dialog, int which) {
-//                            hapusKuliner(tvID.getText().toString());
+//                            hapusAnime(tvID.getText().toString());
 //                            dialog.dismiss();
 //                        }
 //                    });
@@ -114,10 +117,10 @@ public class AdapterAnime extends RecyclerView.Adapter<AdapterAnime.VHAnime> {
 //                            Intent pindah = new Intent(ctx, UbahActivity.class);
 //                            pindah.putExtra("xId", tvID.getText().toString());
 //                            pindah.putExtra("xNama", tvNama.getText().toString());
-//                            pindah.putExtra("xEpisode", tvEpisode.getText().toString());
+////                            pindah.putExtra("xEpisode", tvEpisode.getText().toString());
 //                            pindah.putExtra("xTahun", tvTahun.getText().toString());
-//                            pindah.putExtra("xStudio", tvStudio.getText().toString());
-//                            pindah.putExtra("xGenre", tvGenre.getText().toString());
+////                            pindah.putExtra("xStudio", tvStudio.getText().toString());
+////                            pindah.putExtra("xGenre", tvGenre.getText().toString());
 //                            ctx.startActivity(pindah);
 //                        }
 //                    });
@@ -126,27 +129,30 @@ public class AdapterAnime extends RecyclerView.Adapter<AdapterAnime.VHAnime> {
 //                    return false;
 //                }
 //            });
-        }
+//            }
 
-        private void hapusAnime(String idAnime){
-            APIRequestData ARD = RetroServer.konekRetrofit().create(APIRequestData.class);
-            Call<ModelResponse> proses = ARD.ardDelete(idAnime);
 
-            proses.enqueue(new Callback<ModelResponse>() {
-                @Override
-                public void onResponse(Call<ModelResponse> call, Response<ModelResponse> response) {
-                    String kode = response.body().getKode();
-                    String pesan = response.body().getPesan();
-
-                    Toast.makeText(ctx, "Kode: " + kode + ", Pesan: " + pesan, Toast.LENGTH_SHORT).show();
-                    ((MainActivity) ctx).retrieveAnime();
-                }
-
-                @Override
-                public void onFailure(Call<ModelResponse> call, Throwable t) {
-
-                }
-            });
+//                private void hapusAnime(String idAnime) {
+//                    APIRequestData ARD = RetroServer.konekRetrofit().create(APIRequestData.class);
+//                    Call<ModelResponse> proses = ARD.ardDelete(idAnime);
+//
+//                    proses.enqueue(new Callback<ModelResponse>() {
+//                        @Override
+//                        public void onResponse(Call<ModelResponse> call, Response<ModelResponse> response) {
+//                            String kode = response.body().getKode();
+//                            String pesan = response.body().getPesan();
+//
+//                            Toast.makeText(ctx, "Kode: " + kode + ", Pesan: " + pesan, Toast.LENGTH_SHORT).show();
+//                            ((MainActivity) ctx).retrieveAnime();
+//                        }
+//
+//                        @Override
+//                        public void onFailure(Call<ModelResponse> call, Throwable t) {
+//
+//                        }
+//                    });
+//                }
+//            }
         }
     }
 }
