@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:backgroundTint="#87CEEB"
     android:layout_margin="6dp">
     
     <LinearLayout
@@ -28,12 +29,38 @@
             android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/tv_episode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Episode"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+        <TextView
             android:id="@+id/tv_tahun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tahun"
             android:textSize="21sp"
             android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_studio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Studio"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genre"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
     </LinearLayout>
 
 
